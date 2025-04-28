@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl friend</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- หน้าแรก -->
+  <div class="page active" id="introPage">
+    <h1>มีเรื่องจะบอกนะ... 💌</h1>
+    <button class="next-btn" onclick="goToLovePage()">ไปต่อ ➡️</button>
+  </div>
+
+  <!-- หน้าขอเป็นแฟน -->
+  <div class="page" id="lovePage">
+    <h1>เป็นแฟนกันมั้ยคะ? </h1>
+    <div style="display: flex; gap: 20px;">
+      <button class="yes" onclick="yes()">ตกลง</button>
+      <button class="no" onmouseover="moveButton()" onclick="no()">ไม่ตกลง</button>
+    </div>
+  </div>
+
+  <!-- หน้าฉลอง -->
+  <div class="page" id="celebratePage">
+    <h1>เย่! เราเป็นแฟนกันแล้วน้าา 🎉💖</h1>
+    <canvas id="backgroundHearts"></canvas> <!-- หัวใจลอยพื้นหลัง -->
+    <canvas id="fireworks"></canvas>          <!-- พลุหัวใจแตก -->
+  </div>
+
+  <script src="sss.js"></script>
+</body>
+</html>
